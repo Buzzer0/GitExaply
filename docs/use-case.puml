@@ -25,6 +25,5 @@ admin --> D7
 admin --> D8
 admin --> D9
 admin --> D10
-admin --> D3
 admin --> D2
 @enduml
