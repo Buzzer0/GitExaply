@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor "Клиент" as client
+  usecase "Просмотр расписания занятий" as D1
+  usecase "Регистрация на занятия" as D2
+  usecase "Редактирование профиля" as D3
+  usecase "Покупка абонемента" as D4
+  usecase "Подписка на уведомления" as D5
+  
+actor "Администратор" as admin
+  usecase "Рассылка уведомлений" as D6
+  usecase "Просмотр списков клиентов" as D7
+  usecase "Управление ценами и услугами" as D8
+  usecase "Управление абонементами" as D9
+  usecase "Формирование отчетов" as D10
+client --> D1
+client --> D2
+client --> D3
+client --> D4
+client --> D5
+
+admin --> D3
+admin --> D6
+admin --> D7
+admin --> D8
+admin --> D9
+admin --> D10
+admin --> D3
+admin --> D2
+@enduml
